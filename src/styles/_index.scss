@@ -1,0 +1,22 @@
+*,
+::after,
+::before {
+    box-sizing: content-box;
+    word-break: break-word;
+    margin: 0;
+    padding: 0;
+    letter-spacing: 0.3px;
+}
+
+*,
+button:focus {
+    outline: none;
+}
+
+body {
+    font-family: "Lato", sans-serif;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #212529;
+}

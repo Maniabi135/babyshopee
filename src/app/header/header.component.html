@@ -1,16 +1,21 @@
-<div class="container">
-    <ul>
-        <li>
-            <div class="search-section text-right">
-                <p class="text-right">Connect with millions of decision makers</p>
-                <div class="search-box">
-                    <input name="search" type="text" placeholder="Enter a domain name">
-                    <span>&nbsp;</span>
-                    <button name="submit" type="submit">
+<div class="ms-nav">
+    <div class="container">
+        <ul>
+            <li>
+                <div class="ms-search-section text-right">
+                    <p>Customer Support : +91 96265 11012 <span>|</span> Welcome to Babyshopee! </p>
+                    <div class="ms-search-box">
+                        <input name="search" type="text" placeholder="Enter a domain name">
+                        <span>&nbsp;</span>
+                        <button name="submit" type="submit">
                         <i class="material-icons">search</i>
                     </button>
+                    </div>
                 </div>
-            </div>
-        </li>
-    </ul>
+            </li>
+            <li class="ms-nav_list">
+                <span *ngFor="let item of nav_list"><a href="javascript:0">{{item}}</a></span>
+            </li>
+        </ul>
+    </div>
 </div>

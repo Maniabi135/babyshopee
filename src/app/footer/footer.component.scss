@@ -1,0 +1,38 @@
+@import "../../styles/color";
+.ms-footer {
+    background: $dark_orange;
+    padding-top: 35px;
+    padding-bottom: 35px;
+    .ms-contact-detail {
+        .ms-contact-info {
+            li>i {
+                padding-right: 10px;
+            }
+            .ms-follow-us {
+                display: flex;
+                justify-content: space-between;
+            }
+        }
+    }
+}
+
+.ms-payment-platform {
+    background: $f5;
+    padding: 10px;
+    display: flex;
+    justify-content: space-around;
+    b {
+        color: $text_grey;
+    }
+}
+
+.ms-copy-rights {
+    background: $black;
+    text-align: center;
+    padding: 4px;
+    font-size: 14px;
+    color: $charcoal;
+    b {
+        color: $deep_light_blue;
+    }
+}

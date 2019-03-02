@@ -1,3 +1,32 @@
-<p>
-  footer works!
-</p>
+<div class="container-fluid ms-footer">
+    <div class="row">
+        <div class="col-12 col-sm-4">1</div>
+        <div class="col-12 col-sm-8">
+            <div class="row">
+                <div class="col-12 col-sm-4" *ngFor="let item of categoryLinkList;let i = index;">
+                    <h6>{{item['title']}}</h6>
+                    <ul>
+                        <li *ngFor="let sub_item of item['category'];index as j;">
+                            <a href="">{{sub_item}}</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-12 col-sm-4 ms-contact-detail">
+                    <h6>Contact</h6>
+                    <p>No 27, Near, Mettupalayam Rd,<br> Sreevatsa Garden,<br> Thudiyalur,<br> Coimbatore,<br> Tamil Nadu 641029</p>
+                    <ul class="ms-contact-info">
+                        <li><i class="fa fa-phone"></i>+91 96265 11012</li>
+                        <li><i class="fa fa-envelope-o"></i>info@babyshopee.in</li>
+                        <li class="ms-follow-us">follow us:<span class="ms-follow-us" *ngFor="let item of socialContactIcon"><i [ngClass]="[item]"class="material-icons"></i></span></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="ms-payment-platform">
+    <b>Payment</b><img *ngFor="let item of paymentLogo" [src]="item">
+</div>
+<div class="ms-copy-rights">
+    © 2019 Baby Shopee. All Rights Reserved. | Designed and Developed by <b>Reach Unimaginary Info Tech</b>
+</div>
