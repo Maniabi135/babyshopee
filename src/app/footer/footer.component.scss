@@ -1,38 +1,52 @@
 @import "../../styles/color";
+#map {
+    height: 100%;
+}
+
 .ms-footer {
     background: $dark_orange;
-    padding-top: 35px;
-    padding-bottom: 35px;
-    .ms-contact-detail {
-        .ms-contact-info {
-            li>i {
-                padding-right: 10px;
+    .container {
+        padding-top: 50px;
+        padding-bottom: 50px;
+        .ms-contact-detail {
+            .ms-contact-detail {
+                font-size: 14px;
+                color: #fff;
+                margin-bottom: 5px;
             }
-            .ms-follow-us {
-                display: flex;
-                justify-content: space-between;
+            .ms-contact-info {
+                font-size: 14px;
+                li>i {
+                    padding-right: 10px;
+                }
+                .ms-follow-us {
+                    display: flex;
+                    justify-content: space-between;
+                }
+                i {
+                    color: #fff;
+                    cursor: pointer;
+                }
             }
         }
     }
-}
-
-.ms-payment-platform {
-    background: $f5;
-    padding: 10px;
-    display: flex;
-    justify-content: space-around;
-    b {
-        color: $text_grey;
+    .ms-payment-platform {
+        background: $f5;
+        padding: 10px;
+        display: flex;
+        justify-content: space-around;
+        b {
+            color: $text_grey;
+        }
     }
-}
-
-.ms-copy-rights {
-    background: $black;
-    text-align: center;
-    padding: 4px;
-    font-size: 14px;
-    color: $charcoal;
-    b {
-        color: $deep_light_blue;
+    .ms-copy-rights {
+        background: $black;
+        text-align: center;
+        padding: 4px;
+        font-size: 14px;
+        color: $charcoal;
+        span {
+            color: $deep_light_blue;
+        }
     }
 }

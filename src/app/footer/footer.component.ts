@@ -24,7 +24,8 @@ export class FooterComponent implements OnInit {
 
   paymentLogo = ['../../assets/payment/mastercard.png', '../../assets/payment/visa.png', '../../assets/payment/paypal.png'];
 
-  constructor() { }
+  constructor() {
+  }
 
   ngOnInit() {
   }
