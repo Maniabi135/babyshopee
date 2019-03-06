@@ -1,4 +1,4 @@
-import { Component, OnInit, ElementRef } from '@angular/core';
+import { Component, OnInit, ElementRef , AfterViewInit} from '@angular/core';
 
 @Component({
   selector: 'app-slide-show',
@@ -8,21 +8,25 @@ import { Component, OnInit, ElementRef } from '@angular/core';
 export class SlideShowComponent implements OnInit {
 
   slideIndex = 1;
-  slideImg = [
-  '../../assets/slideShow/a1.jpg',
-  '../../assets/slideShow/a.jpg',
-  '../../assets/slideShow/e.jpg',
-  '../../assets/slideShow/b1.jpg',
-  '../../assets/slideShow/b.jpg',
-  '../../assets/slideShow/c1.jpg',
-  '../../assets/slideShow/c.jpg',
-  '../../assets/slideShow/d1.jpg',
-  '../../assets/slideShow/d.jpg',
-  '../../assets/slideShow/m.jpg'
+  slideHeader = [
+  { src: '../../assets/slideShow/a1.jpg', text: 'Caption Text' },
+  { src: '../../assets/slideShow/a.jpg', text: 'Caption Text' },
+  { src: '../../assets/slideShow/e.jpg', text: 'Caption Text' },
+  { src: '../../assets/slideShow/b1.jpg', text: 'Caption Text' },
+  { src: '../../assets/slideShow/b.jpg', text: 'Caption Text' },
+  { src: '../../assets/slideShow/c1.jpg', text: 'Caption Text' },
+  { src: '../../assets/slideShow/c.jpg', text: 'Caption Text' },
+  { src: '../../assets/slideShow/d1.jpg', text: 'Caption Text' },
+  { src: '../../assets/slideShow/d.jpg', text: 'Caption Text' },
+  { src: '../../assets/slideShow/m.jpg', text: 'Caption Text' }
   ];
   constructor( private elem: ElementRef ) { }
 
   ngOnInit() {
+
+  }
+
+  ngAfterViewInit() {
     this.showSlides(this.slideIndex);
   }
 

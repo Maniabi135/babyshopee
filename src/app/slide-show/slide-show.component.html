@@ -1,10 +1,9 @@
 <div class="ms_slideshow_container">
 
-    <div class="ms_mySlides ms_fade" *ngFor="let item of slideImg">
-        <img [src]="[item]">
-        <div class="text">Caption Text</div>
+    <div class="ms_mySlides ms_fade" *ngFor="let item of slideHeader">
+        <img [src]="item['src']">
+        <div class="text">{{item['text']}}</div>
     </div>
-
 
     <a class="prev" (click)="plusSlides(-1)">&#10094;</a>
     <a class="next" (click)="plusSlides(1)">&#10095;</a>
@@ -13,7 +12,5 @@
 <br>
 
 <div class="text-center">
-    <span class="ms_dot" (click)="currentSlide(1)"></span>
-    <span class="ms_dot" (click)="currentSlide(2)"></span>
-    <span class="ms_dot" (click)="currentSlide(3)"></span>
+    <span class="ms_dot" *ngFor="let item of slideHeader; let i = index;" (click)="currentSlide(i+1)"></span>
 </div>
