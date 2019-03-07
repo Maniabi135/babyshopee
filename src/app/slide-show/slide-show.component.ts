@@ -9,17 +9,18 @@ export class SlideShowComponent implements OnInit {
 
   slideIndex = 1;
   slideHeader = [
-  { src: '../../assets/slideShow/a1.jpg', text: 'Caption Text' },
-  { src: '../../assets/slideShow/a.jpg', text: 'Caption Text' },
-  { src: '../../assets/slideShow/e.jpg', text: 'Caption Text' },
-  { src: '../../assets/slideShow/b1.jpg', text: 'Caption Text' },
-  { src: '../../assets/slideShow/b.jpg', text: 'Caption Text' },
-  { src: '../../assets/slideShow/c1.jpg', text: 'Caption Text' },
-  { src: '../../assets/slideShow/c.jpg', text: 'Caption Text' },
-  { src: '../../assets/slideShow/d1.jpg', text: 'Caption Text' },
-  { src: '../../assets/slideShow/d.jpg', text: 'Caption Text' },
-  { src: '../../assets/slideShow/m.jpg', text: 'Caption Text' }
+      { src: '../../assets/slideShow/a1.jpg', text: 'Caption Text' },
+      { src: '../../assets/slideShow/a.jpg', text: 'Caption Text' },
+      { src: '../../assets/slideShow/e.jpg', text: 'Caption Text' },
+      { src: '../../assets/slideShow/b1.jpg', text: 'Caption Text' },
+      { src: '../../assets/slideShow/b.jpg', text: 'Caption Text' },
+      { src: '../../assets/slideShow/c1.jpg', text: 'Caption Text' },
+      { src: '../../assets/slideShow/c.jpg', text: 'Caption Text' },
+      { src: '../../assets/slideShow/d1.jpg', text: 'Caption Text' },
+      { src: '../../assets/slideShow/d.jpg', text: 'Caption Text' },
+      { src: '../../assets/slideShow/m.jpg', text: 'Caption Text' }
   ];
+
   constructor( private elem: ElementRef ) { }
 
   ngOnInit() {
